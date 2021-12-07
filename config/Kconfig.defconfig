@@ -1,5 +1,0 @@
-config USB_HID_POLL_INTERVAL_MS
-    int "Polling interval"
-    default 1
-    help
-      Polling interval in ms selected by the USB HID Device.
