@@ -36,15 +36,15 @@
 		rgb_layer {
 // ------------------------------------------------------------------------------------------------------
 // |  ~  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  | F7 |  F8  |  F9  |  F10  |  F11  |  F12  |  BT_CLR |
-// |  RGB UP  | HUEDN | HUEUP | SPDDN | SPDUP |   |   |   | INS | SLCK | PSCRN | VOLDN | VOLUP |  MUTE  |
-// |   RGB DN  | SATDN | SATUP | BT1 | BT2 | BT3 | BT4 | BT5 |     |     | PGUP | HOME |   BOOTLOADER   |
+// | RGB UP | HUEDN | HUEUP | SPDDN | SPDUP |   | BOOT |   | INS | SLCK | PSCRN | VOLDN | VOLUP |  MUTE |
+// |   RGB DN  | SATDN | SATUP | BT1 | BT2 | BT3 | BT4 | BT5 |     |     | PGUP | HOME |                |
 // |            | BRIDN | BRIUP |     | prefUSB | prefBLE |     | MENU |     | PGDN | END |      UP     |
 // |      |      |      |                   TOG RGB                   |      |   LT   |   DN   |   RT   |
 // ------------------------------------------------------------------------------------------------------
 			bindings = <
 	&kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &bt BT_CLR
-	&rgb_ug RGB_EFF &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SPD &rgb_ug RGB_SPI &trans &trans &trans &kp INS &kp SLCK &kp PSCRN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE 
-	&rgb_ug RGB_EFR &rgb_ug RGB_SAD &rgb_ug RGB_SAI &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &kp PG_UP &kp HOME &bootloader
+	&rgb_ug RGB_EFF &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SPD &rgb_ug RGB_SPI &trans &bootloader &trans &kp INS &kp SLCK &kp PSCRN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE 
+	&rgb_ug RGB_EFR &rgb_ug RGB_SAD &rgb_ug RGB_SAI &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &kp PG_UP &kp HOME &trans
 	&trans &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans &out OUT_USB &out OUT_BLE &trans &kp K_CMENU &trans &kp PG_DN &kp END &kp UP
 	&trans &trans &trans  &rgb_ug RGB_TOG  &trans &kp LEFT &kp DOWN &kp RIGHT
 			>;
